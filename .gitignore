@@ -1,0 +1,26 @@
+# Airflow generated files
+logs/
+airflow.db
+airflow.cfg
+unittests.cfg
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+.env
+.env.*
+
+# Docker and runtime artifacts
+*.pid
+*.log
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
