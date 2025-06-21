@@ -24,17 +24,17 @@ with DAG(
 
     run_extraction_model = BashOperator(
         task_id='extract_raw_data',
-        bash_command='cd /opt/airflow/dbt && dbt run --models stg_raw_data'
+        bash_command='cd /opt/airflow/dbt && dbt run --select staging.stg_raw_data'
     )
 
     run_cleaner_model = BashOperator(
         task_id='clean_raw_data',
-        bash_command='cd /opt/airflow/dbt && dbt run --models stg_cleaned_data'
+        bash_command='cd /opt/airflow/dbt && dbt run --select staging.stg_cleaned_data'
     )
 
     run_validator_model = BashOperator(
         task_id='validate_clean_data',
-        bash_command='cd /opt/airflow/dbt && dbt run --models stg_validate_data'
+        bash_command='cd /opt/airflow/dbt && dbt run --select staging.stg_validate_data'
     )
 
     send_email = EmailOperator(
