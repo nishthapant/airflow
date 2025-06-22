@@ -82,7 +82,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
     - "C:/Users/Nishu/Desktop/dev/dbt/dbt_project:/opt/airflow/dbt"
     - "C:/Users/Nishu/.dbt:/home/airflow/.dbt"
-    - "C:/Users/Nishu/Desktop/dev/dbt/dbt_project/keen-genius-463512-d0-b6da1a352416.json:/opt/dbt_project/keen-genius-463512-d0-b6da1a352416.json"
+    - "C:/Users/Nishu/Desktop/dev/dbt/dbt_project/keen-genius-463512-d0-2f0489f71123.json:/opt/dbt_project/keen-genius-463512-d0-2f0489f71123.json"
     - "C:/Users/Nishu/Desktop/dev/airflow/dags:/opt/airflow/dags"
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
