@@ -17,7 +17,7 @@ This project orchestrates an end-to-end data pipeline for an e-commerce dataset 
 
 ## Data Pipeline Architecture Diagram
 
-![Pipeline Diagram](images/pipeline_architecture.png)
+![Pipeline Diagram](images/pipeline_arch.png)
 
 <br>
 
